@@ -1,21 +1,19 @@
 // Navigation code here
 header {
-    width: 100%;  // Actual design is closer to 100vh
-
+ 
     .flex-vertical();
-    //display: flex;
-    //flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: @nav-gray;
     color: @header-font-color;
-    // border-radius: 10px;       // Design doesn't show this!!
+    // border-radius: 10px;       // Not in the design specification
     border: 1px double #e0e0e0;
 
     nav {
         width: 70%;
+        max-width: 800px;
         .flex-horizontal();
-        // display: flex;
+        
         justify-content: space-evenly;
 
         a {
