@@ -1,10 +1,10 @@
 // Navigation code here
 header {
     width: 100%;  // Actual design is closer to 100vh
-    // height: 10vh;
 
-    display: flex;
-    flex-direction: column;
+    .flex-vertical();
+    //display: flex;
+    //flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: @nav-gray;
@@ -14,7 +14,8 @@ header {
 
     nav {
         width: 70%;
-        display: flex;
+        .flex-horizontal();
+        // display: flex;
         justify-content: space-evenly;
 
         a {
