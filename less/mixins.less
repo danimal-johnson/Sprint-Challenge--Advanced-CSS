@@ -1,1 +1,12 @@
 // Mixins Here
+
+.cta-button(@bgcolor:"black", @textcolor:"white") {
+    padding: 0.5rem;
+    background-color: @bgcolor;
+    color: @textcolor;
+    font-size: 1.6rem;
+    text-align: center;    
+    border-radius: 5px;
+
+    &:hover { background-color: lighten(@bgcolor, 20%); }
+}
