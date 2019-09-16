@@ -1,1 +1,28 @@
 // Mixins Here
+
+.flex-vertical() {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-horizontal() {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.cta-button(@bgcolor:"black", @textcolor:"white") {
+    padding: 0.5rem;
+    background-color: @bgcolor;
+    color: @textcolor;
+    font-size: 1.6rem;
+    text-align: center;
+    border: 2px solid @bgcolor;    
+    border-radius: 5px;
+
+    &:hover { 
+        // background-color: lighten(@bgcolor, 20%); // Not in the design spec.
+        background-color: @textcolor;
+        color: @bgcolor;
+    }
+}
